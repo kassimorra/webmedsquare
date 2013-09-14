@@ -38,6 +38,13 @@ gem "twitter-bootstrap-rails", "~> 2.2.8"
 
 # Devise
 gem "devise", "~> 3.1.0"
+
+# Omniauth LinkedInLogin
+gem 'omniauth'
+gem 'omniauth-linkedin'
+
+# Certified, used to login using OmniAuth
+gem "certified", "~> 0.1.1"
  
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

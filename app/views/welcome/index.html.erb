@@ -3,9 +3,10 @@
 <div>
 <% if user_signed_in? %>
 Welcome <%= current_user.email %>
-<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+<%= link_to 'Signout', destroy_user_session_path, method: :delete %>
 <% else %>
 <%= link_to 'Create new user', new_user_registration_path %>
-<%= link_to 'Login', user_session_path %>
+<%= link_to 'Sign', user_session_path %>
+<%= link_to "Sign in with LinkedIn", user_omniauth_authorize_path(:linkedin) %>
 <% end %>
 </div>
