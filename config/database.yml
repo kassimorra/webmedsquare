@@ -1,0 +1,6 @@
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: webmedsquare
+  username: webmedsquare
+  password: 
